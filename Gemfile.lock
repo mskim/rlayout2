@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    motion-osx-cli (1.0)
+    motion-strscan (0.5.1)
+    motion-yaml (1.6.4)
+    rake (13.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  motion-osx-cli
+  motion-strscan
+  motion-yaml
+  rake
+
+BUNDLED WITH
+   2.0.2

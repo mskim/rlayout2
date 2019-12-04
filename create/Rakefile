@@ -1,0 +1,12 @@
+source_files = FileList["*.md", "*.markdown"]
+task :default => :pdf
+task :pdf => source_files.ext(".pdf")
+
+rule ".pdf" => ".md" do |t|
+  sh "/Users/mskim/Development/Rubymotion/rlayout/build/MacOSX-10.10-Development/rlayout.app/Contents/MacOS/rlayout news_article #{pwd}/#{t.source}"
+end
+
+rule ".pdf" => ".markdown" do |t|
+  sh "/Users/mskim/Development/Rubymotion/rlayout/build/MacOSX-10.10-Development/rlayout.app/Contents/MacOS/rlayout news_article #{pwd}/#{t.source}"
+end
+
